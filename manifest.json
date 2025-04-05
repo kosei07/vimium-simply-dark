@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Vimium Simply Dark Theme",
+  "version": "1.0",
+  "description": "A simple dark theme for Vimium browser extension",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["vimium-simply-dark.css"],
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["vimium-simply-dark.css"],
+    "matches": ["<all_urls>"]
+  }]
+} 
